@@ -11,7 +11,8 @@ public class Main {
                 File file=new File(path);
                 boolean fileExists=file.exists();
                 boolean isDirectory=file.isDirectory();
-                if(!fileExists||isDirectory) {System.out.println("Указан неверный путь или путь к несуществующему файлу");continue;
+                if(!fileExists||isDirectory) {System.out.println("Указан неверный путь или путь к несуществующему файлу");
+                    continue;
                 }
                 else  {count++;
                     System.out.println("Путь указан верно"+" "+"Это файл номер "+count);
